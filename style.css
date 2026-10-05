@@ -63,7 +63,7 @@ h1 { max-width: 650px; margin-bottom: 21px; font-size: clamp(3.4rem, 7.2vw, 6.35
 .art-card::before { top: 65px; right: -72px; }
 .art-card::after { right: -39px; bottom: -88px; width: 230px; height: 230px; }
 .art-card-label { color: #344d27; font-size: 9px; }
-.art-monogram { position: absolute; top: 50%; left: 50%; color: rgba(49,91,39,.88); font-size: 11.5rem; font-weight: 700; letter-spacing: -.13em; line-height: 1; transform: translate(-56%,-57%); }
+.art-monogram { position: absolute; top: 50%; left: 50%; color: rgba(49,91,39,.88); font-size: 8.6rem; font-weight: 700; letter-spacing: -.13em; line-height: 1; transform: translate(-56%,-57%); }
 .art-card-caption { color: #354d2a; font-size: 14px; font-weight: 700; line-height: 1.7; }
 .art-card-index { position: absolute; right: 24px; bottom: 28px; color: #405632; font-family: var(--mono); font-size: 9px; }
 .floating-chip { position: absolute; display: grid; place-items: center; box-shadow: 0 10px 32px rgba(23,42,37,.09); }
@@ -189,7 +189,7 @@ h1 { max-width: 650px; margin-bottom: 21px; font-size: clamp(3.4rem, 7.2vw, 6.35
   .hero-note { margin-top: 36px; }
   .hero-art { min-height: 340px; margin-top: 12px; }
   .art-card { width: 228px; }
-  .art-monogram { font-size: 9rem; }
+  .art-monogram { font-size: 6.6rem; }
   .chip-code { top: 34px; left: 11%; }
   .chip-spark { right: 10%; bottom: 58px; }
   .art-caption { right: 3px; bottom: 0; }
