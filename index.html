@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="个人主页，展示个人简介、技能、项目经历和联系方式。" />
+    <meta name="theme-color" content="#f7f8f4" />
+    <title>个人主页 · 你的姓名</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="你的姓名，返回首页"><span class="brand-mark" aria-hidden="true">Y</span><span>你的姓名</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单" hidden>
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航">
+          <a href="#about">关于</a><a href="#skills">技能</a><a href="#projects">项目</a>
+          <a class="nav-contact" href="#contact">联系我 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10h11m-4.5-4.5 4.5 4.5-4.5 4.5" /></svg></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> 你好，欢迎来到我的主页</p>
+          <h1 id="hero-title">我是<span class="accent-text">你的姓名</span><span class="title-period">.</span></h1>
+          <p class="hero-summary">在这里介绍你自己。说说你正在做什么、关心什么，以及你想创造怎样的价值。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">浏览我的项目 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10h11m-4.5-4.5 4.5 4.5-4.5 4.5" /></svg></a>
+            <a class="text-link" href="#about">认识一下我 <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="note-line" aria-hidden="true"></span><p>持续学习，认真做好每一件小事。</p></div>
+        </div>
+        <div class="hero-art" aria-label="个人主页装饰图形">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-card">
+            <span class="art-card-label">CURRENT FOCUS</span><span class="art-monogram" aria-hidden="true">Y</span>
+            <span class="art-card-caption">把想法变成作品<br />把过程变成成长</span><span class="art-card-index">01 / 04</span>
+          </div>
+          <span class="floating-chip chip-code" aria-hidden="true">&lt;hello /&gt;</span>
+          <span class="floating-chip chip-spark" aria-hidden="true">✳</span>
+          <span class="art-caption">PERSONAL SPACE · 2026</span>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="section-kicker">01 / 关于我</p><h2 id="about-title">关于<span class="accent-text">我</span></h2>
+            <p class="section-aside">一点点好奇心，<br />一点点行动力。</p>
+          </div>
+          <div class="about-content">
+            <p class="about-lead">你好！我是一名<span class="inline-placeholder">在这里填写你的身份或职业</span>，喜欢探索新想法，也乐于把复杂的问题变得简单。</p>
+            <p class="about-body">在这里补充你的经历、兴趣和做事方式。可以聊聊你的学习或职业路径、正在关注的方向，以及你希望和怎样的人一起合作。</p>
+            <div class="about-facts">
+              <div class="fact"><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z" /><circle cx="12" cy="10" r="2.3" /></svg></span><span><span class="fact-label">所在地</span><strong>你的城市</strong></span></div>
+              <div class="fact"><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" /><circle cx="12" cy="12" r="4" /></svg></span><span><span class="fact-label">目前状态</span><strong>开放交流与合作</strong></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading section-heading-row"><div><p class="section-kicker">02 / 我的工具箱</p><h2 id="skills-title">技能与<span class="accent-text">专长</span></h2></div><p class="heading-description">列出你熟悉的工具、技术或擅长的领域。</p></div>
+          <div class="skills-grid">
+            <article class="skill-card"><span class="skill-number">01</span><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m11 9-7 7 7 7M21 9l7 7-7 7m-3-18-4 20" /></svg></span><h3>前端开发</h3><p>构建易用、清晰、适配不同设备的网页体验。</p><div class="tag-list" aria-label="相关技能"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+            <article class="skill-card"><span class="skill-number">02</span><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="4" /><path d="M10 21V11l6 6 6-6v10" /></svg></span><h3>设计与表达</h3><p>用合适的视觉语言组织信息，让想法更容易被理解。</p><div class="tag-list" aria-label="相关技能"><span>视觉设计</span><span>原型</span><span>写作</span></div></article>
+            <article class="skill-card"><span class="skill-number">03</span><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11" /><path d="m12 16 3 3 6-7" /></svg></span><h3>协作与成长</h3><p>保持好奇，乐于沟通，并在实践中不断打磨细节。</p><div class="tag-list" aria-label="相关技能"><span>团队协作</span><span>问题解决</span><span>持续学习</span></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading section-heading-row"><div><p class="section-kicker">03 / 做过的事</p><h2 id="projects-title">精选<span class="accent-text">项目</span></h2></div><p class="heading-description">用真实的作品和成果，讲述你的实践经历。</p></div>
+          <div class="projects-grid">
+            <article class="project-card"><div class="project-visual visual-green" aria-hidden="true"><span class="visual-label">PROJECT 01</span><span class="visual-shape shape-window"><span></span><span></span><span></span><i></i><i></i><i></i></span><span class="visual-stamp">01</span></div><div class="project-info"><div class="project-meta"><span>网页开发</span><span>2026</span></div><h3>项目名称一</h3><p>介绍项目要解决的问题、你负责的部分，以及最终带来的结果。</p><a class="project-link" href="#contact" aria-label="联系我了解项目名称一">了解更多 <span aria-hidden="true">↗</span></a></div></article>
+            <article class="project-card"><div class="project-visual visual-lilac" aria-hidden="true"><span class="visual-label">PROJECT 02</span><span class="visual-shape shape-notes"><i></i><i></i><i></i><b>＋</b></span><span class="visual-stamp">02</span></div><div class="project-info"><div class="project-meta"><span>设计探索</span><span>2025</span></div><h3>项目名称二</h3><p>补充项目背景、使用的方法，以及你从中学到的经验。</p><a class="project-link" href="#contact" aria-label="联系我了解项目名称二">了解更多 <span aria-hidden="true">↗</span></a></div></article>
+            <article class="project-card"><div class="project-visual visual-peach" aria-hidden="true"><span class="visual-label">PROJECT 03</span><span class="visual-shape shape-circles"><i></i><i></i><i></i></span><span class="visual-stamp">03</span></div><div class="project-info"><div class="project-meta"><span>个人实践</span><span>2025</span></div><h3>项目名称三</h3><p>这里可以展示一个练习、开源贡献，或你参与的团队项目。</p><a class="project-link" href="#contact" aria-label="联系我了解项目名称三">了解更多 <span aria-hidden="true">↗</span></a></div></article>
+          </div>
+          <p class="projects-footnote"><span aria-hidden="true">✳</span>小提示：替换项目标题、说明和年份，也可以把卡片链接指向项目地址。</p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner"><div><p class="section-kicker">04 / 保持联系</p><h2 id="contact-title">一起聊聊<span aria-hidden="true">？</span></h2><p class="contact-copy">欢迎交流想法、分享机会，或只是打个招呼。</p></div><div class="contact-actions"><a class="button button-light" href="mailto:your.email@example.com"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="2" /><path d="m3.5 5 6.5 5.5L16.5 5" /></svg>your.email@example.com<span aria-hidden="true">↗</span></a><p>请将邮箱地址替换为你的联系方式。</p></div><span class="contact-decoration" aria-hidden="true">✳</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">Y</span><span>你的姓名</span></a><p>用心生活，认真创作。<span aria-hidden="true">©</span> <span id="year">2026</span></p><a class="back-to-top" href="#top">回到顶部 <span aria-hidden="true">↑</span></a></div></footer>
+  </body>
+</html>
